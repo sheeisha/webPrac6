@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<?xsl-stylesheet type="text/xsl" href="style.xsl"?>
+<!DOCTYPE netflix [
+<!ELEMENT netflix (movies,series,docs)>
+<!ELEMENT movies (mi, rating, genre)*>
+<!ELEMENT mi (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT series (si, genre)*>
+<!ELEMENT si (#PCDATA)>
+<!ELEMENT docs (di)*>
+<!ELEMENT di (#PCDATA)>
+]>
+<netflix>
+
+    <movies>
+        <mi>jurrasic world</mi>
+        <rating>7.0</rating>
+        <genre>thriller</genre>
+
+        <mi>fast and furious</mi>
+        <rating>7.3</rating>
+        <genre>thriller</genre>
+
+        <mi>boss baby</mi>
+        <rating>8.0</rating>
+        <genre>comedy</genre>
+
+        <mi>To all the boys</mi>
+        <rating>9.3</rating>
+        <genre>romcom</genre>
+    </movies>
+
+    <series>
+        <si>Sherlock</si>
+        <genre>thriller</genre>
+
+        <si>Brooklyn 99</si>
+        <genre>comdey</genre>
+
+        <si>The big bang theory</si>
+        <genre>comedy</genre>
+    </series>
+
+    <docs>
+        <di>The Hunt for Veerappan</di>
+        <di>House of Secrets: The Burari Deaths</di>
+        <di>Our Universe</di>
+    </docs>
+
+</netflix>
