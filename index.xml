@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?xsl-stylesheet type="text/xsl" href="style.xsl"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
 <!DOCTYPE netflix [
 <!ELEMENT netflix (movies,series,docs)>
 <!ELEMENT movies (mi, rating, genre)*>
@@ -17,15 +17,18 @@
         <mi>jurrasic world</mi>
         <rating>7.0</rating>
         <genre>thriller</genre>
-
+    </movies>
+    <movies>
         <mi>fast and furious</mi>
         <rating>7.3</rating>
         <genre>thriller</genre>
-
+    </movies>
+    <movies>
         <mi>boss baby</mi>
         <rating>8.0</rating>
         <genre>comedy</genre>
-
+    </movies>
+    <movies>
         <mi>To all the boys</mi>
         <rating>9.3</rating>
         <genre>romcom</genre>
@@ -34,17 +37,23 @@
     <series>
         <si>Sherlock</si>
         <genre>thriller</genre>
-
+    </series>
+    <series>
         <si>Brooklyn 99</si>
         <genre>comdey</genre>
-
+    </series>
+    <series>
         <si>The big bang theory</si>
         <genre>comedy</genre>
     </series>
 
     <docs>
         <di>The Hunt for Veerappan</di>
+    </docs>
+    <docs>
         <di>House of Secrets: The Burari Deaths</di>
+    </docs>
+    <docs>
         <di>Our Universe</di>
     </docs>
 
